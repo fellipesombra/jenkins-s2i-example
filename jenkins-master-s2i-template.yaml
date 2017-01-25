@@ -14,7 +14,7 @@ parameters:
 - description: Git source URI for Jenkins S2I
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/siamaksade/jenkins-s2i-example.git
+  value: https://github.com/fellipesombra/jenkins-s2i-example.git
 - description: Git branch/tag reference
   name: SOURCE_REPOSITORY_REF
   value: master
@@ -100,8 +100,8 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: jenkins:1
-          namespace: openshift
+          name: jenkins-2-rhel7:1
+          namespace: openshift3
       type: Source
     triggers:
     - type: ConfigChange
