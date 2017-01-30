@@ -99,9 +99,8 @@ objects:
     strategy:
       sourceStrategy:
         from:
-          kind: ImageStreamTag
-          name: jenkins-2-rhel7:1
-          namespace: openshift3
+          kind: DockerImage
+          name: registry.access.redhat.com/openshift3/jenkins-2-rhel7
       type: Source
     triggers:
     - type: ConfigChange
